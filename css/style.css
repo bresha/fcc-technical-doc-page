@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid lightblue;
+  color: lightblue;
+  background-color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar header {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 24px;
+}
+
+#navbar ul {
+  padding-left: 20px;
+}
+
+#navbar ul li {
+  list-style: none;
+  margin: 12px;
+}
+
+.nav-link {
+  color: lightblue;
+}
+
+#main-doc {
+  position: absolute;
+  left: 320px;
+  margin: 20px;
+}
+
+.main-section header {
+  text-decoration: underline;
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+code {
+  background-color: lightblue;
+  padding: 8px;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  display: block;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+@media only screen and (max-width: 850px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    border-bottom: 5px solid lightblue;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    max-width: 100%;
+    height: 65vh;
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 0px 0px 20px 0;
+  }
+
+
+  .main-section header {
+    padding-top: 20px;
+  }
+}
